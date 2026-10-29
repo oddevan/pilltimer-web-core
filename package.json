@@ -1,0 +1,13 @@
+{
+	"name": "@oddevan/pilltimer-web-core",
+	"version": "1.0.0",
+	"description": "Core domain logic for PillTimer",
+	"files": ["dist"],
+	"type": "module",
+	"main": "dist/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Evan Hildreth <me@eph.me>",
+	"license": "AGPL-3.0-or-later"
+}
