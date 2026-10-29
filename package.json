@@ -2,12 +2,23 @@
 	"name": "@oddevan/pilltimer-web-core",
 	"version": "1.0.0",
 	"description": "Core domain logic for PillTimer",
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"type": "module",
 	"main": "dist/index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "tsc",
+		"ci": "npm run build && npm run check-format",
+		"format": "prettier --write .",
+		"check-format": "prettier --check ."
 	},
 	"author": "Evan Hildreth <me@eph.me>",
-	"license": "AGPL-3.0-or-later"
+	"license": "AGPL-3.0-or-later",
+	"devDependencies": {
+		"@tsconfig/recommended": "^1.0.13",
+		"@types/node": "^26.6.6",
+		"prettier": "^3.9.10",
+		"typescript": "^7.0.2"
+	}
 }
